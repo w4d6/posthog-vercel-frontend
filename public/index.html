@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostHog Frontend - Vercel Deployment</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0 0 10px 0;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info {
+            background: #d1ecf1;
+            border-left: 4px solid #0c5460;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Menlo', monospace;
+        }
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 10px 10px 0;
+        }
+        .btn:hover {
+            background: #5568d3;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚀 PostHog Frontend on Vercel</h1>
+        <p>This is a demonstration deployment of the PostHog frontend interface.</p>
+    </div>
+
+    <div class="warning">
+        <h2>⚠️ Important Notice</h2>
+        <p><strong>This is a frontend-only deployment.</strong> PostHog requires additional backend services to function:</p>
+        <ul>
+            <li>Django REST API server</li>
+            <li>PostgreSQL database</li>
+            <li>ClickHouse analytics database</li>
+            <li>Redis cache</li>
+            <li>Kafka event streaming</li>
+        </ul>
+        <p>Without these services, this interface will not work properly.</p>
+    </div>
+
+    <div class="info">
+        <h2>📋 What is PostHog?</h2>
+        <p>PostHog is an open-source product analytics platform that helps you understand user behavior, run A/B tests, and build better products.</p>
+        <p><strong>Features include:</strong></p>
+        <ul>
+            <li>Product Analytics</li>
+            <li>Session Recording</li>
+            <li>Feature Flags</li>
+            <li>A/B Testing</li>
+            <li>User Surveys</li>
+            <li>And much more...</li>
+        </ul>
+    </div>
+
+    <h2>🎯 How to Use PostHog</h2>
+
+    <h3>Option 1: PostHog Cloud (Recommended)</h3>
+    <p>The easiest way to use PostHog is through their hosted cloud service:</p>
+    <a href="https://posthog.com/signup" class="btn">Sign Up for PostHog Cloud</a>
+
+    <h3>Option 2: Self-Hosted Deployment</h3>
+    <p>For full control, deploy PostHog on your own infrastructure:</p>
+    <ul>
+        <li><strong>Docker Compose:</strong> Quick start for development and testing</li>
+        <li><strong>Kubernetes/Helm:</strong> Production-ready deployment with scaling</li>
+        <li><strong>Cloud Platforms:</strong> AWS, GCP, Digital Ocean, etc.</li>
+    </ul>
+
+    <h3>Option 3: Hobby Deployment</h3>
+    <p>Run PostHog locally for learning and experimentation:</p>
+    <pre><code>docker run -d --name posthog -p 8000:8000 posthog/posthog:latest</code></pre>
+
+    <h2>📚 Resources</h2>
+    <a href="https://posthog.com/docs" class="btn">Documentation</a>
+    <a href="https://github.com/PostHog/posthog" class="btn">GitHub Repository</a>
+    <a href="https://posthog.com/docs/self-host" class="btn">Self-Host Guide</a>
+
+    <h2>🔗 About This Deployment</h2>
+    <p>This Vercel deployment demonstrates the PostHog frontend interface. To see PostHog in action with full functionality, please use one of the deployment options above.</p>
+
+    <div class="info">
+        <p><strong>Deployed on Vercel:</strong> This static site showcases the PostHog UI architecture and serves as a reference for frontend deployment patterns.</p>
+    </div>
+
+    <footer style="margin-top: 60px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center; color: #666;">
+        <p>PostHog is open source and MIT licensed. Visit <a href="https://posthog.com">posthog.com</a> to learn more.</p>
+    </footer>
+</body>
+</html>
